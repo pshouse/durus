@@ -37,7 +37,7 @@ else:
     def iteritems(x):
         return x.items()
     from io import BytesIO
-    from pickle import dumps, loads, Unpickler, Pickler
+    from dill import dumps, loads, Unpickler, Pickler
 
 _used = [dumps, loads, Unpickler, Pickler, next]  # to quiet code checker.
 
